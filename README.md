@@ -26,6 +26,8 @@ This project demonstrates distributed sorting techniques using Hadoop MapReduce 
 ---
 
 ## Directory Structure
+
+```
 sorting-on-hadoop-and-spark/
 │
 ├── core-site.xml          # Hadoop core configuration
@@ -35,4 +37,4 @@ sorting-on-hadoop-and-spark/
 ├── pom.xml                # Maven configuration
 ├── vault64GB.log          # Execution log for 64GB dataset
 └── README.md              # Project documentation
-
+```
