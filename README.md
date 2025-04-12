@@ -1,10 +1,38 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/oGmEBvoO)
-### CS553 Cloud Computing Assignment 5 Repo
-Illinois Institute of Technology
-A200556560
-Mansi Dinesh
-mdinesh@hawk.iit.edu
+# Distributed Sorting and Performance Analysis using Hadoop and Apache Spark
 
-I wasn't able to download Hadoop until the day before submission, i was figuring out on the errors popping up whole time
-i used all kinds of resources yet it was not possible to finish by the given time, i could complete the whole assignment if another day was given.
-I had an issue while logging in to git which consumed me a lot of time while uploading files to git.
+## Overview
+This project demonstrates distributed sorting techniques using Hadoop MapReduce and Apache Spark in a cloud environment. The objective is to compare the performance of Hadoop Sort and Spark Sort across large datasets of varying sizes, and evaluate their efficiency based on execution time and resource utilization.
+
+---
+
+## Technologies Used
+- Hadoop MapReduce
+- Apache Spark
+- HDFS (Hadoop Distributed File System)
+- Yarn (Resource Manager)
+- Cloud-based Virtual Machines
+- Linux Environment
+- Maven
+
+---
+
+## Project Objectives
+- Configure Hadoop Cluster on Cloud Virtual Machines
+- Perform distributed sorting using Hadoop Sort and Spark Sort
+- Benchmark and compare performance on datasets of 16GB, 32GB, and 64GB
+- Analyze the impact of increasing RAM and VM instances on execution time
+- Optimize resource allocation for better performance
+
+---
+
+## Directory Structure
+sorting-on-hadoop-and-spark/
+│
+├── core-site.xml          # Hadoop core configuration
+├── hdfs-site.xml          # HDFS configuration
+├── yarn-site.xml          # Yarn resource manager configuration
+├── mapred-site.xml        # MapReduce configuration
+├── pom.xml                # Maven configuration
+├── vault64GB.log          # Execution log for 64GB dataset
+└── README.md              # Project documentation
+
