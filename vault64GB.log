@@ -1,0 +1,332 @@
+root@large-insatnce:~/cs553-spring2024-hw5-mdinesh6# ./vault -t 16 -o 16 -i 4 -m 16 -s 64 -f data-64GB.bin
+NUM_THREADS=16
+BATCH_SIZE=32768
+num_threads_sort=16
+num_threads_io=4
+memory_size=16 GB
+FILESIZE=64 GB
+FILENAME=data-64GB.bin
+bytes_free=193126051840
+ratio=4
+memory_size_byte=17179869184
+FILESIZE_byte=68719476736
+-------------------------
+found good configuration:
+memory_size_byte=17179869184
+FILESIZE_byte=68719476736
+WRITE_SIZE=134217728
+FLUSH_SIZE=4
+BUCKET_SIZE=33554432
+NUM_BUCKETS=128
+PREFIX_SIZE=7
+EXPECTED_TOTAL_FLUSHES=512
+sort_memory=8589934592
+NUM_ENTRIES=4294967296
+Total Memory: 25204809728 bytes
+Free Memory: 4265463808 bytes
+MEMORY_MAX=17179869184
+RECORD_SIZE=16
+HASH_SIZE=10
+NONCE_SIZE=6
+num_threads_hash=16
+num_threads_sort=16
+num_threads_io=4
+storing vault configuration in data-64GB.bin.config
+hash generation and sorting...
+initializing circular array...
+Create thread data structure...
+Create hash generation threads...
+Hash generation threads created...
+[1][HASHGEN]: 0.42% completed, ETA 240.5 seconds, 0/512 flushes, 272.7 MB/sec
+[2][HASHGEN]: 0.87% completed, ETA 228.1 seconds, 0/512 flushes, 298.4 MB/sec
+[3][HASHGEN]: 1.33% completed, ETA 223.5 seconds, 0/512 flushes, 298.4 MB/sec
+[4][HASHGEN]: 1.78% completed, ETA 220.8 seconds, 0/512 flushes, 298.0 MB/sec
+[5][HASHGEN]: 2.24% completed, ETA 218.8 seconds, 0/512 flushes, 297.8 MB/sec
+[6][HASHGEN]: 2.71% completed, ETA 215.6 seconds, 0/512 flushes, 310.2 MB/sec
+[7][HASHGEN]: 3.19% completed, ETA 212.8 seconds, 0/512 flushes, 312.7 MB/sec
+[8][HASHGEN]: 3.65% completed, ETA 211.4 seconds, 0/512 flushes, 302.9 MB/sec
+[9][HASHGEN]: 4.12% completed, ETA 209.9 seconds, 0/512 flushes, 304.6 MB/sec
+[10][HASHGEN]: 4.56% completed, ETA 209.6 seconds, 0/512 flushes, 290.3 MB/sec
+[11][HASHGEN]: 5.02% completed, ETA 208.6 seconds, 0/512 flushes, 298.6 MB/sec
+[12][HASHGEN]: 5.47% completed, ETA 207.5 seconds, 0/512 flushes, 298.6 MB/sec
+[13][HASHGEN]: 5.93% completed, ETA 206.5 seconds, 0/512 flushes, 298.7 MB/sec
+[14][HASHGEN]: 6.39% completed, ETA 205.5 seconds, 0/512 flushes, 298.6 MB/sec
+[15][HASHGEN]: 6.84% completed, ETA 204.5 seconds, 0/512 flushes, 298.5 MB/sec
+[16][HASHGEN]: 7.30% completed, ETA 203.5 seconds, 0/512 flushes, 298.3 MB/sec
+[17][HASHGEN]: 7.75% completed, ETA 202.5 seconds, 0/512 flushes, 298.5 MB/sec
+[18][HASHGEN]: 8.21% completed, ETA 201.5 seconds, 0/512 flushes, 298.7 MB/sec
+[19][HASHGEN]: 8.66% completed, ETA 200.5 seconds, 0/512 flushes, 298.6 MB/sec
+[20][HASHGEN]: 9.12% completed, ETA 199.5 seconds, 0/512 flushes, 298.4 MB/sec
+[21][HASHGEN]: 9.58% completed, ETA 198.5 seconds, 0/512 flushes, 298.3 MB/sec
+[22][HASHGEN]: 10.03% completed, ETA 197.5 seconds, 0/512 flushes, 298.3 MB/sec
+[23][HASHGEN]: 10.49% completed, ETA 196.5 seconds, 0/512 flushes, 298.3 MB/sec
+[24][HASHGEN]: 10.94% completed, ETA 195.6 seconds, 0/512 flushes, 298.2 MB/sec
+[25][HASHGEN]: 11.40% completed, ETA 194.6 seconds, 0/512 flushes, 298.1 MB/sec
+[26][HASHGEN]: 11.85% completed, ETA 193.6 seconds, 0/512 flushes, 298.7 MB/sec
+[27][HASHGEN]: 12.31% completed, ETA 192.6 seconds, 0/512 flushes, 298.3 MB/sec
+[28][HASHGEN]: 12.77% completed, ETA 191.6 seconds, 0/512 flushes, 298.5 MB/sec
+[29][HASHGEN]: 13.22% completed, ETA 190.6 seconds, 0/512 flushes, 298.5 MB/sec
+[30][HASHGEN]: 13.68% completed, ETA 189.6 seconds, 0/512 flushes, 298.2 MB/sec
+[31][HASHGEN]: 14.13% completed, ETA 188.5 seconds, 0/512 flushes, 298.8 MB/sec
+[32][HASHGEN]: 14.59% completed, ETA 187.5 seconds, 0/512 flushes, 298.4 MB/sec
+[33][HASHGEN]: 15.04% completed, ETA 186.5 seconds, 0/512 flushes, 298.5 MB/sec
+[34][HASHGEN]: 15.50% completed, ETA 185.6 seconds, 0/512 flushes, 298.3 MB/sec
+[35][HASHGEN]: 15.95% completed, ETA 184.6 seconds, 0/512 flushes, 298.4 MB/sec
+[36][HASHGEN]: 16.39% completed, ETA 183.8 seconds, 0/512 flushes, 287.0 MB/sec
+[37][HASHGEN]: 16.84% completed, ETA 182.8 seconds, 0/512 flushes, 295.2 MB/sec
+[38][HASHGEN]: 17.29% completed, ETA 181.9 seconds, 0/512 flushes, 293.0 MB/sec
+[39][HASHGEN]: 17.74% completed, ETA 181.0 seconds, 0/512 flushes, 295.5 MB/sec
+[40][HASHGEN]: 18.21% completed, ETA 179.9 seconds, 0/512 flushes, 304.2 MB/sec
+[41][HASHGEN]: 18.68% completed, ETA 178.6 seconds, 0/512 flushes, 310.3 MB/sec
+[42][HASHGEN]: 19.15% completed, ETA 177.5 seconds, 0/512 flushes, 309.2 MB/sec
+[43][HASHGEN]: 19.63% completed, ETA 176.3 seconds, 0/512 flushes, 310.0 MB/sec
+[44][HASHGEN]: 20.10% completed, ETA 175.1 seconds, 0/512 flushes, 308.9 MB/sec
+[45][HASHGEN]: 20.57% completed, ETA 173.9 seconds, 0/512 flushes, 309.6 MB/sec
+[46][HASHGEN]: 21.04% completed, ETA 172.8 seconds, 0/512 flushes, 308.4 MB/sec
+[47][HASHGEN]: 21.51% completed, ETA 171.6 seconds, 0/512 flushes, 309.1 MB/sec
+[48][HASHGEN]: 21.99% completed, ETA 170.5 seconds, 0/512 flushes, 308.4 MB/sec
+[49][HASHGEN]: 22.46% completed, ETA 169.3 seconds, 0/512 flushes, 309.7 MB/sec
+[50][HASHGEN]: 22.93% completed, ETA 168.2 seconds, 0/512 flushes, 308.0 MB/sec
+[51][HASHGEN]: 23.40% completed, ETA 167.1 seconds, 0/512 flushes, 309.4 MB/sec
+[52][HASHGEN]: 23.87% completed, ETA 166.0 seconds, 0/512 flushes, 308.0 MB/sec
+[53][HASHGEN]: 24.34% completed, ETA 164.9 seconds, 0/512 flushes, 308.9 MB/sec
+[54][HASHGEN]: 24.82% completed, ETA 163.7 seconds, 0/512 flushes, 313.7 MB/sec
+[55][HASHGEN]: 24.98% completed, ETA 165.6 seconds, 7/512 flushes, 95.7 MB/sec
+[56][HASHGEN]: 24.99% completed, ETA 168.8 seconds, 18/512 flushes, 3.7 MB/sec
+[57][HASHGEN]: 24.99% completed, ETA 172.5 seconds, 29/512 flushes, 1.6 MB/sec
+[58][HASHGEN]: 25.00% completed, ETA 176.3 seconds, 40/512 flushes, 1.2 MB/sec
+[59][HASHGEN]: 25.00% completed, ETA 179.7 seconds, 50/512 flushes, 0.9 MB/sec
+[61][HASHGEN]: 25.00% completed, ETA 184.3 seconds, 60/512 flushes, 0.6 MB/sec
+[65][HASHGEN]: 25.00% completed, ETA 197.0 seconds, 69/512 flushes, 0.2 MB/sec
+[67][HASHGEN]: 25.00% completed, ETA 201.0 seconds, 73/512 flushes, 0.4 MB/sec
+[68][HASHGEN]: 25.00% completed, ETA 204.3 seconds, 80/512 flushes, 0.9 MB/sec
+[69][HASHGEN]: 25.00% completed, ETA 208.5 seconds, 91/512 flushes, 0.7 MB/sec
+[70][HASHGEN]: 25.01% completed, ETA 211.5 seconds, 99/512 flushes, 1.0 MB/sec
+[72][HASHGEN]: 25.01% completed, ETA 217.0 seconds, 105/512 flushes, 0.5 MB/sec
+[74][HASHGEN]: 25.01% completed, ETA 223.3 seconds, 109/512 flushes, 0.5 MB/sec
+[77][HASHGEN]: 25.01% completed, ETA 233.4 seconds, 110/512 flushes, 0.1 MB/sec
+[79][HASHGEN]: 25.01% completed, ETA 237.3 seconds, 116/512 flushes, 0.8 MB/sec
+[80][HASHGEN]: 25.02% completed, ETA 240.7 seconds, 123/512 flushes, 2.7 MB/sec
+[81][HASHGEN]: 25.12% completed, ETA 242.3 seconds, 128/512 flushes, 68.5 MB/sec
+[82][HASHGEN]: 25.58% completed, ETA 239.4 seconds, 128/512 flushes, 303.2 MB/sec
+[83][HASHGEN]: 26.05% completed, ETA 236.5 seconds, 128/512 flushes, 304.9 MB/sec
+[84][HASHGEN]: 26.51% completed, ETA 233.7 seconds, 128/512 flushes, 303.0 MB/sec
+[85][HASHGEN]: 26.97% completed, ETA 231.0 seconds, 128/512 flushes, 298.1 MB/sec
+[86][HASHGEN]: 27.42% completed, ETA 228.4 seconds, 128/512 flushes, 297.6 MB/sec
+[87][HASHGEN]: 27.88% completed, ETA 225.9 seconds, 128/512 flushes, 298.0 MB/sec
+[88][HASHGEN]: 28.39% completed, ETA 222.7 seconds, 128/512 flushes, 335.0 MB/sec
+[89][HASHGEN]: 28.92% completed, ETA 219.5 seconds, 128/512 flushes, 348.7 MB/sec
+[90][HASHGEN]: 29.46% completed, ETA 216.2 seconds, 128/512 flushes, 356.3 MB/sec
+[91][HASHGEN]: 30.01% completed, ETA 212.9 seconds, 128/512 flushes, 356.3 MB/sec
+[92][HASHGEN]: 30.54% completed, ETA 209.9 seconds, 128/512 flushes, 346.2 MB/sec
+[93][HASHGEN]: 31.02% completed, ETA 207.5 seconds, 128/512 flushes, 313.5 MB/sec
+[94][HASHGEN]: 31.56% completed, ETA 204.5 seconds, 128/512 flushes, 358.4 MB/sec
+[95][HASHGEN]: 32.05% completed, ETA 202.1 seconds, 128/512 flushes, 318.3 MB/sec
+[96][HASHGEN]: 32.49% completed, ETA 200.1 seconds, 128/512 flushes, 290.1 MB/sec
+[97][HASHGEN]: 32.93% completed, ETA 198.1 seconds, 128/512 flushes, 290.2 MB/sec
+[98][HASHGEN]: 33.38% completed, ETA 196.2 seconds, 128/512 flushes, 290.0 MB/sec
+[99][HASHGEN]: 33.82% completed, ETA 194.4 seconds, 128/512 flushes, 286.9 MB/sec
+[100][HASHGEN]: 34.25% completed, ETA 192.5 seconds, 128/512 flushes, 284.6 MB/sec
+[101][HASHGEN]: 34.69% completed, ETA 190.7 seconds, 128/512 flushes, 286.1 MB/sec
+[102][HASHGEN]: 35.12% completed, ETA 189.0 seconds, 128/512 flushes, 284.7 MB/sec
+[103][HASHGEN]: 35.56% completed, ETA 187.2 seconds, 128/512 flushes, 286.2 MB/sec
+[104][HASHGEN]: 35.99% completed, ETA 185.5 seconds, 128/512 flushes, 284.7 MB/sec
+[105][HASHGEN]: 36.43% completed, ETA 183.7 seconds, 128/512 flushes, 286.8 MB/sec
+[106][HASHGEN]: 36.96% completed, ETA 181.3 seconds, 128/512 flushes, 343.1 MB/sec
+[107][HASHGEN]: 37.45% completed, ETA 179.2 seconds, 128/512 flushes, 323.9 MB/sec
+[108][HASHGEN]: 37.92% completed, ETA 177.3 seconds, 128/512 flushes, 309.3 MB/sec
+[109][HASHGEN]: 38.40% completed, ETA 175.4 seconds, 128/512 flushes, 310.7 MB/sec
+[110][HASHGEN]: 38.87% completed, ETA 173.5 seconds, 128/512 flushes, 310.4 MB/sec
+[111][HASHGEN]: 39.33% completed, ETA 171.7 seconds, 128/512 flushes, 299.6 MB/sec
+[112][HASHGEN]: 39.79% completed, ETA 170.0 seconds, 128/512 flushes, 298.3 MB/sec
+[113][HASHGEN]: 40.23% completed, ETA 168.3 seconds, 128/512 flushes, 293.6 MB/sec
+[114][HASHGEN]: 40.69% completed, ETA 166.6 seconds, 128/512 flushes, 297.2 MB/sec
+[115][HASHGEN]: 41.14% completed, ETA 165.0 seconds, 128/512 flushes, 296.0 MB/sec
+[116][HASHGEN]: 41.59% completed, ETA 163.4 seconds, 128/512 flushes, 294.1 MB/sec
+[117][HASHGEN]: 42.03% completed, ETA 161.8 seconds, 128/512 flushes, 286.4 MB/sec
+[118][HASHGEN]: 42.48% completed, ETA 160.2 seconds, 128/512 flushes, 299.2 MB/sec
+[119][HASHGEN]: 42.95% completed, ETA 158.5 seconds, 128/512 flushes, 303.4 MB/sec
+[120][HASHGEN]: 43.42% completed, ETA 156.8 seconds, 128/512 flushes, 308.0 MB/sec
+[121][HASHGEN]: 43.88% completed, ETA 155.2 seconds, 128/512 flushes, 300.3 MB/sec
+[122][HASHGEN]: 44.34% completed, ETA 153.5 seconds, 128/512 flushes, 304.5 MB/sec
+[123][HASHGEN]: 44.80% completed, ETA 151.9 seconds, 128/512 flushes, 302.0 MB/sec
+[124][HASHGEN]: 45.27% completed, ETA 150.3 seconds, 128/512 flushes, 304.7 MB/sec
+[125][HASHGEN]: 45.73% completed, ETA 148.7 seconds, 128/512 flushes, 305.9 MB/sec
+[126][HASHGEN]: 46.21% completed, ETA 147.1 seconds, 128/512 flushes, 311.5 MB/sec
+[127][HASHGEN]: 46.68% completed, ETA 145.4 seconds, 128/512 flushes, 308.9 MB/sec
+[128][HASHGEN]: 47.15% completed, ETA 143.8 seconds, 128/512 flushes, 310.5 MB/sec
+[129][HASHGEN]: 47.63% completed, ETA 142.2 seconds, 128/512 flushes, 309.0 MB/sec
+[130][HASHGEN]: 48.11% completed, ETA 140.6 seconds, 128/512 flushes, 317.2 MB/sec
+[131][HASHGEN]: 48.58% completed, ETA 139.0 seconds, 128/512 flushes, 309.1 MB/sec
+[132][HASHGEN]: 49.05% completed, ETA 137.5 seconds, 128/512 flushes, 304.9 MB/sec
+[133][HASHGEN]: 49.51% completed, ETA 136.0 seconds, 128/512 flushes, 304.1 MB/sec
+[134][HASHGEN]: 49.98% completed, ETA 134.7 seconds, 130/512 flushes, 250.7 MB/sec
+[135][HASHGEN]: 49.98% completed, ETA 135.7 seconds, 138/512 flushes, 4.5 MB/sec
+[136][HASHGEN]: 49.99% completed, ETA 136.9 seconds, 146/512 flushes, 1.7 MB/sec
+[138][HASHGEN]: 49.99% completed, ETA 138.1 seconds, 156/512 flushes, 1.2 MB/sec
+[139][HASHGEN]: 49.99% completed, ETA 139.5 seconds, 166/512 flushes, 0.7 MB/sec
+[140][HASHGEN]: 49.99% completed, ETA 140.9 seconds, 173/512 flushes, 1.4 MB/sec
+[142][HASHGEN]: 50.00% completed, ETA 142.1 seconds, 183/512 flushes, 1.2 MB/sec
+[143][HASHGEN]: 50.00% completed, ETA 143.3 seconds, 193/512 flushes, 1.7 MB/sec
+[144][HASHGEN]: 50.00% completed, ETA 144.4 seconds, 202/512 flushes, 1.3 MB/sec
+[147][HASHGEN]: 50.00% completed, ETA 147.0 seconds, 216/512 flushes, 0.8 MB/sec
+[152][HASHGEN]: 50.01% completed, ETA 152.9 seconds, 220/512 flushes, 0.1 MB/sec
+[154][HASHGEN]: 50.01% completed, ETA 154.1 seconds, 222/512 flushes, 0.4 MB/sec
+[155][HASHGEN]: 50.01% completed, ETA 155.4 seconds, 230/512 flushes, 1.5 MB/sec
+[156][HASHGEN]: 50.01% completed, ETA 156.7 seconds, 239/512 flushes, 1.1 MB/sec
+[158][HASHGEN]: 50.02% completed, ETA 158.2 seconds, 247/512 flushes, 1.7 MB/sec
+[159][HASHGEN]: 50.02% completed, ETA 159.1 seconds, 249/512 flushes, 2.5 MB/sec
+[164][HASHGEN]: 50.02% completed, ETA 164.5 seconds, 250/512 flushes, 0.2 MB/sec
+[166][HASHGEN]: 50.02% completed, ETA 165.9 seconds, 251/512 flushes, 0.7 MB/sec
+[167][HASHGEN]: 50.02% completed, ETA 167.0 seconds, 253/512 flushes, 1.0 MB/sec
+[168][HASHGEN]: 50.13% completed, ETA 167.3 seconds, 256/512 flushes, 67.4 MB/sec
+[169][HASHGEN]: 50.64% completed, ETA 164.8 seconds, 256/512 flushes, 336.1 MB/sec
+[170][HASHGEN]: 51.19% completed, ETA 162.2 seconds, 256/512 flushes, 357.1 MB/sec
+[171][HASHGEN]: 51.69% completed, ETA 159.9 seconds, 256/512 flushes, 329.6 MB/sec
+[172][HASHGEN]: 52.17% completed, ETA 157.8 seconds, 256/512 flushes, 312.6 MB/sec
+[173][HASHGEN]: 52.62% completed, ETA 155.9 seconds, 256/512 flushes, 298.2 MB/sec
+[174][HASHGEN]: 53.08% completed, ETA 153.9 seconds, 256/512 flushes, 298.6 MB/sec
+[175][HASHGEN]: 53.54% completed, ETA 152.0 seconds, 256/512 flushes, 298.9 MB/sec
+[176][HASHGEN]: 53.99% completed, ETA 150.1 seconds, 256/512 flushes, 299.7 MB/sec
+[177][HASHGEN]: 54.45% completed, ETA 148.2 seconds, 256/512 flushes, 299.2 MB/sec
+[178][HASHGEN]: 54.91% completed, ETA 146.3 seconds, 256/512 flushes, 299.5 MB/sec
+[179][HASHGEN]: 55.39% completed, ETA 144.3 seconds, 256/512 flushes, 313.2 MB/sec
+[180][HASHGEN]: 55.89% completed, ETA 142.2 seconds, 256/512 flushes, 330.7 MB/sec
+[181][HASHGEN]: 56.37% completed, ETA 140.2 seconds, 256/512 flushes, 311.9 MB/sec
+[182][HASHGEN]: 56.84% completed, ETA 138.3 seconds, 256/512 flushes, 308.4 MB/sec
+[183][HASHGEN]: 57.30% completed, ETA 136.5 seconds, 256/512 flushes, 304.9 MB/sec
+[184][HASHGEN]: 57.78% completed, ETA 134.6 seconds, 256/512 flushes, 309.4 MB/sec
+[185][HASHGEN]: 58.24% completed, ETA 132.7 seconds, 256/512 flushes, 306.5 MB/sec
+[186][HASHGEN]: 58.72% completed, ETA 130.9 seconds, 256/512 flushes, 309.0 MB/sec
+[187][HASHGEN]: 59.20% completed, ETA 129.0 seconds, 256/512 flushes, 317.7 MB/sec
+[188][HASHGEN]: 59.74% completed, ETA 126.8 seconds, 256/512 flushes, 353.0 MB/sec
+[189][HASHGEN]: 60.27% completed, ETA 124.7 seconds, 256/512 flushes, 346.7 MB/sec
+[190][HASHGEN]: 60.77% completed, ETA 122.8 seconds, 256/512 flushes, 325.3 MB/sec
+[191][HASHGEN]: 61.26% completed, ETA 120.9 seconds, 256/512 flushes, 326.8 MB/sec
+[192][HASHGEN]: 61.75% completed, ETA 119.0 seconds, 256/512 flushes, 317.5 MB/sec
+[193][HASHGEN]: 62.24% completed, ETA 117.2 seconds, 256/512 flushes, 319.9 MB/sec
+[194][HASHGEN]: 62.73% completed, ETA 115.4 seconds, 256/512 flushes, 321.3 MB/sec
+[195][HASHGEN]: 63.22% completed, ETA 113.5 seconds, 256/512 flushes, 321.1 MB/sec
+[196][HASHGEN]: 63.71% completed, ETA 111.7 seconds, 256/512 flushes, 319.1 MB/sec
+[197][HASHGEN]: 64.19% completed, ETA 110.0 seconds, 256/512 flushes, 316.0 MB/sec
+[198][HASHGEN]: 64.67% completed, ETA 108.2 seconds, 256/512 flushes, 316.8 MB/sec
+[199][HASHGEN]: 65.13% completed, ETA 106.6 seconds, 256/512 flushes, 300.4 MB/sec
+[200][HASHGEN]: 65.59% completed, ETA 105.0 seconds, 256/512 flushes, 298.5 MB/sec
+[201][HASHGEN]: 66.04% completed, ETA 103.4 seconds, 256/512 flushes, 297.7 MB/sec
+[202][HASHGEN]: 66.56% completed, ETA 101.6 seconds, 256/512 flushes, 338.2 MB/sec
+[203][HASHGEN]: 67.04% completed, ETA 99.9 seconds, 256/512 flushes, 317.7 MB/sec
+[204][HASHGEN]: 67.52% completed, ETA 98.2 seconds, 256/512 flushes, 314.8 MB/sec
+[205][HASHGEN]: 68.00% completed, ETA 96.5 seconds, 256/512 flushes, 313.0 MB/sec
+[206][HASHGEN]: 68.47% completed, ETA 94.9 seconds, 256/512 flushes, 308.7 MB/sec
+[207][HASHGEN]: 68.94% completed, ETA 93.3 seconds, 256/512 flushes, 306.3 MB/sec
+[208][HASHGEN]: 69.40% completed, ETA 91.8 seconds, 256/512 flushes, 298.9 MB/sec
+[209][HASHGEN]: 69.86% completed, ETA 90.2 seconds, 256/512 flushes, 301.0 MB/sec
+[210][HASHGEN]: 70.31% completed, ETA 88.7 seconds, 256/512 flushes, 297.8 MB/sec
+[211][HASHGEN]: 70.77% completed, ETA 87.2 seconds, 256/512 flushes, 297.9 MB/sec
+[212][HASHGEN]: 71.22% completed, ETA 85.7 seconds, 256/512 flushes, 300.0 MB/sec
+[213][HASHGEN]: 71.69% completed, ETA 84.2 seconds, 256/512 flushes, 307.3 MB/sec
+[214][HASHGEN]: 72.16% completed, ETA 82.6 seconds, 256/512 flushes, 302.7 MB/sec
+[215][HASHGEN]: 72.62% completed, ETA 81.1 seconds, 256/512 flushes, 302.8 MB/sec
+[216][HASHGEN]: 73.08% completed, ETA 79.6 seconds, 256/512 flushes, 302.4 MB/sec
+[217][HASHGEN]: 73.54% completed, ETA 78.1 seconds, 256/512 flushes, 302.5 MB/sec
+[218][HASHGEN]: 74.00% completed, ETA 76.6 seconds, 256/512 flushes, 302.9 MB/sec
+[219][HASHGEN]: 74.47% completed, ETA 75.1 seconds, 256/512 flushes, 302.8 MB/sec
+[220][HASHGEN]: 74.92% completed, ETA 73.7 seconds, 256/512 flushes, 299.4 MB/sec
+[221][HASHGEN]: 74.98% completed, ETA 73.8 seconds, 264/512 flushes, 32.7 MB/sec
+[222][HASHGEN]: 74.98% completed, ETA 74.2 seconds, 273/512 flushes, 3.8 MB/sec
+[223][HASHGEN]: 74.99% completed, ETA 74.6 seconds, 281/512 flushes, 2.4 MB/sec
+[224][HASHGEN]: 74.99% completed, ETA 75.0 seconds, 291/512 flushes, 1.5 MB/sec
+[226][HASHGEN]: 74.99% completed, ETA 75.5 seconds, 300/512 flushes, 0.7 MB/sec
+[228][HASHGEN]: 75.00% completed, ETA 76.0 seconds, 310/512 flushes, 1.3 MB/sec
+[230][HASHGEN]: 75.00% completed, ETA 76.8 seconds, 320/512 flushes, 0.7 MB/sec
+[234][HASHGEN]: 75.00% completed, ETA 78.2 seconds, 322/512 flushes, 0.1 MB/sec
+[237][HASHGEN]: 75.00% completed, ETA 79.1 seconds, 324/512 flushes, 0.5 MB/sec
+[239][HASHGEN]: 75.00% completed, ETA 79.8 seconds, 339/512 flushes, 0.8 MB/sec
+[240][HASHGEN]: 75.00% completed, ETA 80.2 seconds, 341/512 flushes, 0.7 MB/sec
+[252][HASHGEN]: 75.01% completed, ETA 84.1 seconds, 343/512 flushes, 0.0 MB/sec
+[253][HASHGEN]: 75.01% completed, ETA 84.5 seconds, 352/512 flushes, 2.1 MB/sec
+[255][HASHGEN]: 75.01% completed, ETA 85.0 seconds, 358/512 flushes, 0.7 MB/sec
+[256][HASHGEN]: 75.02% completed, ETA 85.3 seconds, 365/512 flushes, 2.7 MB/sec
+[258][HASHGEN]: 75.02% completed, ETA 86.2 seconds, 371/512 flushes, 0.4 MB/sec
+[268][HASHGEN]: 75.02% completed, ETA 89.3 seconds, 373/512 flushes, 0.1 MB/sec
+[269][HASHGEN]: 75.02% completed, ETA 89.6 seconds, 376/512 flushes, 2.0 MB/sec
+[270][HASHGEN]: 75.03% completed, ETA 89.9 seconds, 381/512 flushes, 6.0 MB/sec
+[271][HASHGEN]: 75.46% completed, ETA 88.2 seconds, 384/512 flushes, 279.2 MB/sec
+[272][HASHGEN]: 76.03% completed, ETA 85.8 seconds, 384/512 flushes, 376.3 MB/sec
+[273][HASHGEN]: 76.50% completed, ETA 83.9 seconds, 384/512 flushes, 309.2 MB/sec
+[274][HASHGEN]: 76.97% completed, ETA 82.1 seconds, 384/512 flushes, 305.1 MB/sec
+[275][HASHGEN]: 77.44% completed, ETA 80.2 seconds, 384/512 flushes, 305.4 MB/sec
+[276][HASHGEN]: 77.90% completed, ETA 78.4 seconds, 384/512 flushes, 301.0 MB/sec
+[277][HASHGEN]: 78.37% completed, ETA 76.5 seconds, 384/512 flushes, 307.4 MB/sec
+[278][HASHGEN]: 78.83% completed, ETA 74.7 seconds, 384/512 flushes, 304.6 MB/sec
+[279][HASHGEN]: 79.30% completed, ETA 72.9 seconds, 384/512 flushes, 305.2 MB/sec
+[280][HASHGEN]: 79.77% completed, ETA 71.1 seconds, 384/512 flushes, 309.0 MB/sec
+[281][HASHGEN]: 80.25% completed, ETA 69.2 seconds, 384/512 flushes, 312.2 MB/sec
+[282][HASHGEN]: 80.72% completed, ETA 67.4 seconds, 384/512 flushes, 312.6 MB/sec
+[283][HASHGEN]: 81.19% completed, ETA 65.6 seconds, 384/512 flushes, 307.1 MB/sec
+[284][HASHGEN]: 81.62% completed, ETA 64.0 seconds, 384/512 flushes, 276.8 MB/sec
+[285][HASHGEN]: 82.03% completed, ETA 62.5 seconds, 384/512 flushes, 272.9 MB/sec
+[286][HASHGEN]: 82.46% completed, ETA 60.9 seconds, 384/512 flushes, 277.5 MB/sec
+[287][HASHGEN]: 82.88% completed, ETA 59.3 seconds, 384/512 flushes, 281.1 MB/sec
+[288][HASHGEN]: 83.34% completed, ETA 57.6 seconds, 384/512 flushes, 294.7 MB/sec
+[289][HASHGEN]: 83.81% completed, ETA 55.9 seconds, 384/512 flushes, 313.7 MB/sec
+[290][HASHGEN]: 84.31% completed, ETA 54.0 seconds, 384/512 flushes, 321.9 MB/sec
+[291][HASHGEN]: 84.74% completed, ETA 52.4 seconds, 384/512 flushes, 285.9 MB/sec
+[292][HASHGEN]: 85.28% completed, ETA 50.5 seconds, 384/512 flushes, 352.0 MB/sec
+[293][HASHGEN]: 85.79% completed, ETA 48.6 seconds, 384/512 flushes, 334.5 MB/sec
+[294][HASHGEN]: 86.28% completed, ETA 46.8 seconds, 384/512 flushes, 321.5 MB/sec
+[295][HASHGEN]: 86.75% completed, ETA 45.1 seconds, 384/512 flushes, 305.1 MB/sec
+[296][HASHGEN]: 87.20% completed, ETA 43.5 seconds, 384/512 flushes, 296.3 MB/sec
+[297][HASHGEN]: 87.66% completed, ETA 41.9 seconds, 384/512 flushes, 299.9 MB/sec
+[298][HASHGEN]: 88.12% completed, ETA 40.2 seconds, 384/512 flushes, 300.9 MB/sec
+[299][HASHGEN]: 88.57% completed, ETA 38.6 seconds, 384/512 flushes, 298.5 MB/sec
+[300][HASHGEN]: 89.04% completed, ETA 37.0 seconds, 384/512 flushes, 305.8 MB/sec
+[301][HASHGEN]: 89.54% completed, ETA 35.2 seconds, 384/512 flushes, 325.1 MB/sec
+[302][HASHGEN]: 90.01% completed, ETA 33.5 seconds, 384/512 flushes, 312.3 MB/sec
+[303][HASHGEN]: 90.47% completed, ETA 31.9 seconds, 384/512 flushes, 299.4 MB/sec
+[304][HASHGEN]: 90.92% completed, ETA 30.4 seconds, 384/512 flushes, 297.6 MB/sec
+[305][HASHGEN]: 91.38% completed, ETA 28.8 seconds, 384/512 flushes, 299.8 MB/sec
+[306][HASHGEN]: 91.85% completed, ETA 27.2 seconds, 384/512 flushes, 304.3 MB/sec
+[307][HASHGEN]: 92.31% completed, ETA 25.6 seconds, 384/512 flushes, 304.3 MB/sec
+[308][HASHGEN]: 92.78% completed, ETA 24.0 seconds, 384/512 flushes, 308.1 MB/sec
+[309][HASHGEN]: 93.26% completed, ETA 22.4 seconds, 384/512 flushes, 310.9 MB/sec
+[310][HASHGEN]: 93.73% completed, ETA 20.8 seconds, 384/512 flushes, 309.0 MB/sec
+[311][HASHGEN]: 94.20% completed, ETA 19.2 seconds, 384/512 flushes, 309.7 MB/sec
+[312][HASHGEN]: 94.67% completed, ETA 17.6 seconds, 384/512 flushes, 309.1 MB/sec
+[313][HASHGEN]: 95.15% completed, ETA 16.0 seconds, 384/512 flushes, 309.1 MB/sec
+[314][HASHGEN]: 95.62% completed, ETA 14.4 seconds, 384/512 flushes, 309.2 MB/sec
+[315][HASHGEN]: 96.09% completed, ETA 12.8 seconds, 384/512 flushes, 308.6 MB/sec
+[316][HASHGEN]: 96.56% completed, ETA 11.3 seconds, 384/512 flushes, 309.0 MB/sec
+[317][HASHGEN]: 97.03% completed, ETA 9.7 seconds, 384/512 flushes, 309.2 MB/sec
+[318][HASHGEN]: 97.51% completed, ETA 8.1 seconds, 384/512 flushes, 309.5 MB/sec
+[319][HASHGEN]: 97.99% completed, ETA 6.6 seconds, 384/512 flushes, 314.4 MB/sec
+[320][HASHGEN]: 98.46% completed, ETA 5.0 seconds, 384/512 flushes, 312.0 MB/sec
+[321][HASHGEN]: 98.93% completed, ETA 3.5 seconds, 384/512 flushes, 308.9 MB/sec
+[322][HASHGEN]: 99.41% completed, ETA 1.9 seconds, 384/512 flushes, 309.1 MB/sec
+[323][HASHGEN]: 99.83% completed, ETA 0.5 seconds, 384/512 flushes, 280.2 MB/sec
+[324][HASHGEN]: 99.97% completed, ETA 0.1 seconds, 390/512 flushes, 88.5 MB/sec
+[325][HASHGEN]: 99.98% completed, ETA 0.1 seconds, 400/512 flushes, 5.5 MB/sec
+[326][HASHGEN]: 99.99% completed, ETA 0.0 seconds, 412/512 flushes, 2.2 MB/sec
+[327][HASHGEN]: 99.99% completed, ETA 0.0 seconds, 422/512 flushes, 1.8 MB/sec
+[328][HASHGEN]: 99.99% completed, ETA 0.0 seconds, 432/512 flushes, 3.0 MB/sec
+[329][HASHGEN]: 99.99% completed, ETA 0.0 seconds, 442/512 flushes, 0.9 MB/sec
+[331][HASHGEN]: 100.00% completed, ETA 0.0 seconds, 449/512 flushes, 1.2 MB/sec
+[333][HASHGEN]: 100.00% completed, ETA 0.0 seconds, 452/512 flushes, 0.4 MB/sec
+[335][HASHGEN]: 100.00% completed, ETA 0.0 seconds, 454/512 flushes, 0.2 MB/sec
+[336][HASHGEN]: 100.00% completed, ETA 0.0 seconds, 465/512 flushes, 3.3 MB/sec
+[337][HASHGEN]: 100.00% completed, ETA 0.0 seconds, 474/512 flushes, 3.2 MB/sec
+[339][HASHGEN]: 100.00% completed, ETA 0.0 seconds, 482/512 flushes, 1.4 MB/sec
+[345][HASHGEN]: 100.00% completed, ETA 0.0 seconds, 484/512 flushes, 0.1 MB/sec
+[347][HASHGEN]: 100.00% completed, ETA 0.0 seconds, 488/512 flushes, 0.4 MB/sec
+[348][HASHGEN]: 100.00% completed, ETA 0.0 seconds, 496/512 flushes, 3.7 MB/sec
+[349][HASHGEN]: 100.00% completed, ETA 0.0 seconds, 504/512 flushes, 3.3 MB/sec
+[350][HASHGEN]: 100.00% completed, ETA 0.0 seconds, 512/512 flushes, 6.3 MB/sec
+[399][SORT]: 0.00% completed, ETA inf seconds, 0/128 flushes, 0.0 MB/sec
+[431][SORT]: 12.50% completed, ETA 550.0 seconds, 16/128 flushes, 261.6 MB/sec
+[478][SORT]: 25.00% completed, ETA 376.5 seconds, 32/128 flushes, 174.6 MB/sec
+[511][SORT]: 37.50% completed, ETA 264.7 seconds, 48/128 flushes, 246.0 MB/sec
+[543][SORT]: 50.00% completed, ETA 191.3 seconds, 64/128 flushes, 252.4 MB/sec
+[576][SORT]: 62.50% completed, ETA 134.5 seconds, 80/128 flushes, 249.1 MB/sec
+[610][SORT]: 75.00% completed, ETA 85.8 seconds, 96/128 flushes, 246.2 MB/sec
+[643][SORT]: 87.50% completed, ETA 41.5 seconds, 112/128 flushes, 247.9 MB/sec
+Completed 64 GB vault data-64GB.bin in 642.98 seconds : 6.68 MH/s 101.93 MB/s
